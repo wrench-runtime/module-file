@@ -13,7 +13,7 @@ typedef struct {
 }  Buffer;
 
 static void wren_runtime_error(WrenVM* vm, const char * error){
-  wrenSetSlotString(vm, 0, error); 
+  wrenSetSlotString(vm, 0, error);
   wrenAbortFiber(vm, 0);
 }
 
